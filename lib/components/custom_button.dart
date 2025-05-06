@@ -7,17 +7,12 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var primary = Theme.of(context).colorScheme.primary;
     return OutlinedButton(
       onPressed: onPressed,
       style: OutlinedButton.styleFrom(
-        backgroundColor: primary,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
-          side: BorderSide(color: primary),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
-      child: Text(text, style: TextStyle(color: Colors.white, fontSize: 17)),
+      child: Text(text, style: TextStyle(fontSize: 17)),
     );
   }
 }

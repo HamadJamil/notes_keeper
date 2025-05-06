@@ -1,6 +1,8 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:notes_keeper/provider/theme_provider.dart';
 import 'package:notes_keeper/services/splash_service.dart';
+import 'package:provider/provider.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -16,6 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     splashService.shift(context);
+    Provider.of<ThemeProvider>(context,listen: false).updateNewUser();
   }
 
   @override

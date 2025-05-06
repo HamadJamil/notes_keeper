@@ -20,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
     Provider.of<DataBaseProvider>(context, listen: false).setNotesList();
+    Provider.of<ThemeProvider>(context, listen: false).loadTheme();
   }
 
   @override

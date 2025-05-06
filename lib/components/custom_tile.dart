@@ -66,7 +66,6 @@ class CustomTile extends StatelessWidget {
             child: ListTile(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
-                side: BorderSide(color: Theme.of(context).colorScheme.primary),
               ),
               onTap: onTap,
               onLongPress: onLongPress,

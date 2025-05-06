@@ -26,16 +26,13 @@ class CustomTextField extends StatelessWidget {
         hintText: 'Enter $label',
         alignLabelWithHint: true,
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.all(Radius.circular(10)),
-          borderSide: BorderSide(color: Theme.of(context).colorScheme.primary),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
-          borderSide: BorderSide(color: Theme.of(context).colorScheme.primary),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
-          borderSide: BorderSide(color: Theme.of(context).colorScheme.error),
         ),
       ),
       validator: (value) {
